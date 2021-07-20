@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 110px;
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    height: 45px;
+    width: 112px;
+    background: url('../img/logo-union.png') center no-repeat;
+}
+
+.logo::before {
+    position: absolute;
+    content: '';
+    left: -50px;
+    top: 0;
+    width: 47px;
+    height: 45px;
+    background: url('../img/logo.png') center no-repeat;
+    background-size: 90%;
+}
+
+header > ul {
+    display: flex;
+} 
+
+header ul > li {
+    margin: 0 15px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.header-btn-container {
+    display: flex;
+    width: 145px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-btn {
+    position: relative;
+    width: 102px;
+    height: 25px;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.profile-btn::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -25px;
+    width: 18px;
+    height: 20px;   
+    background: url('../img/icons/user-icon.png') center / cover no-repeat;
+}
+
+.search-btn {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: url('../img/icons/search-icon.png') center / cover no-repeat;
+    background-size: 90%;
+    border: none;
+}
+
+.search-btn::before {
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: 0;
+    height: 20px;
+    width: 1px;
+    background-color: #F1E0DD;
+}

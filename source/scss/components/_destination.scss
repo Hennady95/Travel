@@ -1,0 +1,159 @@
+.destination {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 60px;
+}
+
+.green-blur-circle {
+    position: absolute;
+    top: 0;
+    right: 90px;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 40px #ABF19F;
+}
+
+.blue-blur-circle {
+    position: absolute;
+    bottom: -100px;
+    left: 90px;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 40px #9CD9EC;
+}
+
+.destination-title {
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.santorini-item {
+    position: relative;
+    margin: 0 20px;
+    height: 400px;
+    width: 300px;
+}
+
+.santorini-item:nth-child(1) {
+    background: url('../img/picture/place-1.png') center / cover no-repeat;
+}
+
+.santorini-item:nth-child(2) {
+    background: url('../img/picture/place-2.png') center / cover no-repeat;
+}
+
+.santorini-item:nth-child(3) {
+    background: url('../img/picture/place-3.png') center / cover no-repeat;
+}
+
+.santorini-item_info {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 280px;
+    bottom: -30px;
+    right: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 25px rgba(215, 190, 190, 0.2);
+}
+
+.santorini-item_info > .btn {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.santorini-title {
+    margin-bottom: 10px;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.santorini-mark {
+    display: flex;
+    align-items: baseline;
+}
+
+.satnorini-price {
+    margin-right: 30px;
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+   //@at-root line-height: 18px;
+    color: #FF715B;
+}
+
+.santorini-review {
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    //line-height: 18px;
+    color: #A79997;
+}
+
+.santorini-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 550px;
+}
+
+.santorini-container > .btn {
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: -30px;
+}
+
+.santorini-item:nth-child(2) {
+    position: relative;
+    align-self:flex-start;
+}
+
+.santorini-item:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -160px;
+    width: 0;
+    height: 0;
+    border-top: 120px solid transparent;
+    border-right: 120px solid #EDF3FF;
+}
+
+.santorini-item:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -150px;
+    width: 110px;
+    height: 120px;
+    background-color: #FFF4DE;
+    border-top-right-radius: 100%;
+} 
+
+.star-container {
+    display: flex;
+    margin-right: 7px;
+}
+
+.star-container img {
+    width: 10px;
+    height: 10px;
+}

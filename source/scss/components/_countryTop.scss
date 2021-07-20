@@ -1,0 +1,77 @@
+.country-top {
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+}
+
+.top-description-container {
+    padding: 20px;
+    width: 350px;
+}
+
+.country-top-title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.country-top-title span {
+    color: #FF715B;
+}
+
+.country-top-text {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 20px;
+    color: gray;
+}
+
+.country-container {
+    display: flex;
+    z-index: 5;
+}
+
+.country-miniature {
+    margin: 0 10px;
+    height: 300px;
+    width: 230px;
+    background-color: gray;
+    text-transform: capitalize;
+    color: #ffffff;
+    z-index: 0;
+}
+
+.country-miniature-shadow {
+    width: 100%;
+    height: 100%;
+    padding: 270px 15px 15px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 47.69%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 5;
+}
+
+.country-name {
+    z-index: 10;
+}
+
+.country-miniature:nth-child(1) {
+    background: url('../img/city/Cuba.png') center / cover no-repeat;
+}
+
+.country-miniature:nth-child(2) {
+    background: url('../img/city/Paris.png') center / cover no-repeat;
+}
+
+.country-miniature:nth-child(3) {
+    background: url('../img/city/japan.png') center / cover no-repeat;
+}
+
+.right-shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 500px;
+    background-color: rgba(128, 128, 128,0.1);
+}
